@@ -30,7 +30,8 @@ const App = () => {
   }
 
   const onDateClick = () => {
-    window.open('https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmxmMGRiNjkzZDgyMmk1NHViZ2kxcjFnOHEgbHVpc2FuZ2VsMTAwMThAbQ&tmsrc=luisangel10018%40gmail.com')
+    // window.open('https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmxmMGRiNjkzZDgyMmk1NHViZ2kxcjFnOHEgbHVpc2FuZ2VsMTAwMThAbQ&tmsrc=luisangel10018%40gmail.com')
+    window.open('https://calendar.google.com/calendar/u/0/r/eventedit?dates=20241019/20241020&text=Fiesta Lucy')
   }
 
   const onFoodMenuClick = () => {
