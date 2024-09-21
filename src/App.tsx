@@ -21,7 +21,7 @@ const App = () => {
         console.log('loading finished')
         setPageState(pageState === PageState.FrontPage ? PageState.FoodMenu : PageState.FrontPage)
         setLoading(false)
-      }, 400) // 0.5s seconds
+      }, 400) // 0.4s seconds
     }
   }, [loading])
 

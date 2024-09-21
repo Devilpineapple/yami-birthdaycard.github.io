@@ -36,8 +36,13 @@
   }
 } */
 
+/*
+  f0a8bc
+  ffc0cb
+*/
+
 .App-body {
-  background-color: #ffc0cb;
+  background-color: #f0a8bc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
