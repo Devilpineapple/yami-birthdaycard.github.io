@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/birthdaycard.github.io/static/css/main.e92851e7.css",
-    "main.js": "/birthdaycard.github.io/static/js/main.d5cb46da.js",
+    "main.css": "/birthdaycard.github.io/static/css/main.b1f9ce44.css",
+    "main.js": "/birthdaycard.github.io/static/js/main.550771f6.js",
     "static/js/453.702a3b4e.chunk.js": "/birthdaycard.github.io/static/js/453.702a3b4e.chunk.js",
-    "static/media/logo.svg": "/birthdaycard.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/birthday_empty.png": "/birthdaycard.github.io/static/media/birthday_empty.cb668a394f63a2456195.png",
     "index.html": "/birthdaycard.github.io/index.html",
-    "main.e92851e7.css.map": "/birthdaycard.github.io/static/css/main.e92851e7.css.map",
-    "main.d5cb46da.js.map": "/birthdaycard.github.io/static/js/main.d5cb46da.js.map",
+    "main.b1f9ce44.css.map": "/birthdaycard.github.io/static/css/main.b1f9ce44.css.map",
+    "main.550771f6.js.map": "/birthdaycard.github.io/static/js/main.550771f6.js.map",
     "453.702a3b4e.chunk.js.map": "/birthdaycard.github.io/static/js/453.702a3b4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e92851e7.css",
-    "static/js/main.d5cb46da.js"
+    "static/css/main.b1f9ce44.css",
+    "static/js/main.550771f6.js"
   ]
 }
