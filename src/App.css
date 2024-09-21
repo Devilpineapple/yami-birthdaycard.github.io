@@ -30,6 +30,14 @@
   width: 100vw;
 }
 
+.menu-image {
+  width: 100vw;
+}
+
+.menu-menu-menu {
+  background-color: beige;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

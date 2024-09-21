@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from './luz_logo.png';
+import birthday_menu from './birthday_menu.png';
 import location from './luz_location.png';
 import date from './luz_date.png';
 import menu from './luz_menu.png';
@@ -10,15 +11,19 @@ enum PageState {
   FoodMenu
 }
 
+const gCalendarApi = process.env.REACT_APP_API_KEY
+
 const App = () => {
   const [loading, setLoading] = useState(true)
   const [pageState, setPageState] = useState(PageState.FoodMenu)
 
+
   useEffect(() => {
+    // console.log(gCalendarApi)
     if (loading) {
-      console.log('loading start')
+      // console.log('loading start')
       setTimeout(() => {
-        console.log('loading finished')
+        // console.log('loading finished')
         setPageState(pageState === PageState.FrontPage ? PageState.FoodMenu : PageState.FrontPage)
         setLoading(false)
       }, 400) // 0.4s seconds
@@ -60,8 +65,8 @@ const App = () => {
 
   const renderFoodMenu = () => {
     return <>
-      Menu goes here
-      <img src={menu} className='menu-option' alt="logo" onClick={onFoodMenuClick} />
+      <img src={birthday_menu} className='menu-image' alt="logo" />
+      <img src={menu} className='menu-option menu-menu-menu' alt="logo" onClick={onFoodMenuClick} />
     </>
   }
 
