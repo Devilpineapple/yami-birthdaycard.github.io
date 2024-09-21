@@ -7,11 +7,23 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: 100vw;
+  margin-top: 3vh;
 }
 
-.menu-options {
+.menu-option {
   width: 24vw;
-  height: auto;
+}
+
+.menu-location {
+  width: 30vw;
+}
+
+.menu-date {
+  width: 32vw;
+}
+
+.menu-menu {
+  
 }
 
 .App-logo {
@@ -35,7 +47,8 @@
   align-items: center;
   justify-content: center;
   /* font-size: calc(10px + 2vmin); */
-  color: white;
+  color: #E42324;
+  font-weight: bold;
 }
 
 .App-link {
