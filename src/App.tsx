@@ -14,7 +14,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <div className='app-menu'>
-          <img src={location} className='menu-options' alt="logo" />
+          <img src={location} className='menu-options' alt="logo" onClick={() => {
+            window.open('https://maps.app.goo.gl/do54pdBSCzMvUmSA7')
+          }} />
           <img src={date} className='menu-options' alt="logo" />
           
           <img src={menu} className='menu-options' alt="logo" />
