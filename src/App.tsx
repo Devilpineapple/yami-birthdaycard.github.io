@@ -16,6 +16,7 @@ function App() {
         <div className='app-menu'>
           <img src={location} className='menu-options' alt="logo" />
           <img src={date} className='menu-options' alt="logo" />
+          
           <img src={menu} className='menu-options' alt="logo" />
         </div>
         
