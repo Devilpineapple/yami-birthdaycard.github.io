@@ -11,8 +11,8 @@ enum PageState {
 }
 
 const App = () => {
-  const [loading, setLoading] = useState(false)
-  const [pageState, setPageState] = useState(PageState.FrontPage)
+  const [loading, setLoading] = useState(true)
+  const [pageState, setPageState] = useState(PageState.FoodMenu)
 
   useEffect(() => {
     if (loading) {
@@ -21,7 +21,7 @@ const App = () => {
         console.log('loading finished')
         setPageState(pageState === PageState.FrontPage ? PageState.FoodMenu : PageState.FrontPage)
         setLoading(false)
-      }, 450) // 0.5s seconds
+      }, 400) // 0.5s seconds
     }
   }, [loading])
 
@@ -41,7 +41,7 @@ const App = () => {
     if (!loading) {
       return pageState === PageState.FrontPage ? renderFrontPage() : renderFoodMenu()
     } else {
-      return <div>LOADING...</div>
+      return <div></div>
     }
   }
 
