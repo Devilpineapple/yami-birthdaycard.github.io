@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/birthdaycard.github.io/static/css/main.78cfc685.css",
-    "main.js": "/birthdaycard.github.io/static/js/main.b34a3d37.js",
+    "main.css": "/birthdaycard.github.io/static/css/main.f6c0d777.css",
+    "main.js": "/birthdaycard.github.io/static/js/main.73c3e2c2.js",
     "static/js/453.702a3b4e.chunk.js": "/birthdaycard.github.io/static/js/453.702a3b4e.chunk.js",
     "static/media/luz_logo.png": "/birthdaycard.github.io/static/media/luz_logo.8aead2b1f3b82e7c5306.png",
-    "static/media/birthday_menu.png": "/birthdaycard.github.io/static/media/birthday_menu.892c8dd93c965bb1e5d2.png",
+    "static/media/birthday_menu_v3.png": "/birthdaycard.github.io/static/media/birthday_menu_v3.c5e0d90a5aacb47420a5.png",
     "static/media/luz_location.png": "/birthdaycard.github.io/static/media/luz_location.a0208f7ee8b584f2af32.png",
     "static/media/luz_date.png": "/birthdaycard.github.io/static/media/luz_date.187551c9573586eed393.png",
     "static/media/luz_menu.png": "/birthdaycard.github.io/static/media/luz_menu.0bd2f426f02e30e4f6dc.png",
     "index.html": "/birthdaycard.github.io/index.html",
-    "main.78cfc685.css.map": "/birthdaycard.github.io/static/css/main.78cfc685.css.map",
-    "main.b34a3d37.js.map": "/birthdaycard.github.io/static/js/main.b34a3d37.js.map",
+    "main.f6c0d777.css.map": "/birthdaycard.github.io/static/css/main.f6c0d777.css.map",
+    "main.73c3e2c2.js.map": "/birthdaycard.github.io/static/js/main.73c3e2c2.js.map",
     "453.702a3b4e.chunk.js.map": "/birthdaycard.github.io/static/js/453.702a3b4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78cfc685.css",
-    "static/js/main.b34a3d37.js"
+    "static/css/main.f6c0d777.css",
+    "static/js/main.73c3e2c2.js"
   ]
 }
