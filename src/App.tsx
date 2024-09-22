@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from './luz_logo.png';
-import birthday_menu from './birthday_menu.png';
+import birthday_menu from './birthday_menu_v3.png';
+import back_arrow from './back_arrow.png';
 import location from './luz_location.png';
 import date from './luz_date.png';
 import menu from './luz_menu.png';
@@ -66,7 +67,7 @@ const App = () => {
   const renderFoodMenu = () => {
     return <>
       <img src={birthday_menu} className='menu-image' alt="logo" />
-      <img src={menu} className='menu-option menu-menu-menu' alt="logo" onClick={onFoodMenuClick} />
+      <img src={back_arrow} className='back-arrow' alt="logo" onClick={onFoodMenuClick} />
     </>
   }
 
