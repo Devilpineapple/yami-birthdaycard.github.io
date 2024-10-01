@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './luz_logo.png';
+import logo from './luz_logo_v2.png';
 import birthday_menu from './birthday_menu_v3.png';
 import back_arrow from './back_arrow.png';
 import location from './luz_location.png';
