@@ -14,7 +14,7 @@ enum PageState {
 
 // const gCalendarApi = process.env.REACT_APP_API_KEY
 
-const mainPhoneNumber = "627198889"
+const mainPhoneNumber = "XXXXXXXXX"
 
 const App = () => {
   const [loading, setLoading] = useState(true)
