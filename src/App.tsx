@@ -14,6 +14,8 @@ enum PageState {
 
 // const gCalendarApi = process.env.REACT_APP_API_KEY
 
+const mainPhoneNumber = "627198889"
+
 const App = () => {
   const [loading, setLoading] = useState(true)
   const [pageState, setPageState] = useState(PageState.FoodMenu)
@@ -37,7 +39,7 @@ const App = () => {
 
   const onDateClick = () => {
     // window.open('https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmxmMGRiNjkzZDgyMmk1NHViZ2kxcjFnOHEgbHVpc2FuZ2VsMTAwMThAbQ&tmsrc=luisangel10018%40gmail.com')
-    window.open('https://calendar.google.com/calendar/u/0/r/eventedit?dates=20241019/20241020&text=Fiesta cumple Luz')
+    // window.open('https://calendar.google.com/calendar/u/0/r/eventedit?dates=20241019/20241020&text=Fiesta cumple Luz')
   }
 
   const onFoodMenuClick = () => {
@@ -61,7 +63,9 @@ const App = () => {
         <img src={date} className='menu-option menu-date' alt="logo" onClick={onDateClick} />
         <img src={menu} className='menu-option menu-menu' alt="logo" onClick={onFoodMenuClick} /> */}
       </div>
-      {/* <a href="https://wa.me/664806624?text=Confirmo%20la%20asistencia">Click me</a> */}
+      {/* <a href="https://wa.me/664806624?text=Confirmo%20la%20asistencia&#127821;">Click me</a> */}
+      <a href={`https://api.whatsapp.com/send/?phone=${mainPhoneNumber}&text=Confirmo%20la%20asistencia&#127821;`}>Click me x2</a>
+      {/* <a href="https://api.whatsapp.com/send/?phone=664806624&text=Confirmo%20la%20asistencia&#127821;">Click me x2</a> */}
     </>
   }
 
