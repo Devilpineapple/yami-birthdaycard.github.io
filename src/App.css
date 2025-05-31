@@ -7,7 +7,7 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: 100vw;
-  margin-top: 3vh;
+  /* margin-top: 3vh; */
 }
 
 .menu-option {
@@ -51,7 +51,7 @@
 */
 
 .App-body {
-  background-color: #f0a8bc;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

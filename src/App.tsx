@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './luz_logo_v2.png';
+import logo from './logo-yami-cumple.png';
 import birthday_menu from './birthday_menu_v3.png';
 import back_arrow from './back_arrow.png';
 import location from './luz_location.png';
@@ -12,7 +12,7 @@ enum PageState {
   FoodMenu
 }
 
-const gCalendarApi = process.env.REACT_APP_API_KEY
+// const gCalendarApi = process.env.REACT_APP_API_KEY
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -57,10 +57,11 @@ const App = () => {
       <img src={logo} className="App-logo" alt="logo" />
 
       <div className='app-menu'>
-        <img src={location} className='menu-option menu-location' alt="logo" onClick={onLocationClick} />
+        {/* <img src={location} className='menu-option menu-location' alt="logo" onClick={onLocationClick} />
         <img src={date} className='menu-option menu-date' alt="logo" onClick={onDateClick} />
-        <img src={menu} className='menu-option menu-menu' alt="logo" onClick={onFoodMenuClick} />
+        <img src={menu} className='menu-option menu-menu' alt="logo" onClick={onFoodMenuClick} /> */}
       </div>
+      {/* <a href="https://wa.me/664806624?text=Confirmo%20la%20asistencia">Click me</a> */}
     </>
   }
 
