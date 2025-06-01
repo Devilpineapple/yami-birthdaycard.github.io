@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/yami-birthdaycard.github.io/static/css/main.b8df5658.css",
-    "main.js": "/yami-birthdaycard.github.io/static/js/main.9456a841.js",
+    "main.css": "/yami-birthdaycard.github.io/static/css/main.53aae836.css",
+    "main.js": "/yami-birthdaycard.github.io/static/js/main.bf32eb7b.js",
     "static/js/453.31b20e3c.chunk.js": "/yami-birthdaycard.github.io/static/js/453.31b20e3c.chunk.js",
     "static/media/logo-yami-cumple.png": "/yami-birthdaycard.github.io/static/media/logo-yami-cumple.a278ef633619cfba1288.png",
-    "static/media/birthday_menu_v3.png": "/yami-birthdaycard.github.io/static/media/birthday_menu_v3.c5e0d90a5aacb47420a5.png",
     "index.html": "/yami-birthdaycard.github.io/index.html",
-    "main.b8df5658.css.map": "/yami-birthdaycard.github.io/static/css/main.b8df5658.css.map",
-    "main.9456a841.js.map": "/yami-birthdaycard.github.io/static/js/main.9456a841.js.map",
+    "main.53aae836.css.map": "/yami-birthdaycard.github.io/static/css/main.53aae836.css.map",
+    "main.bf32eb7b.js.map": "/yami-birthdaycard.github.io/static/js/main.bf32eb7b.js.map",
     "453.31b20e3c.chunk.js.map": "/yami-birthdaycard.github.io/static/js/453.31b20e3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8df5658.css",
-    "static/js/main.9456a841.js"
+    "static/css/main.53aae836.css",
+    "static/js/main.bf32eb7b.js"
   ]
 }
