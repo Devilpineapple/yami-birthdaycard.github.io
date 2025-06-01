@@ -22,6 +22,12 @@
   width: 32vw;
 }
 
+.test-ground {
+  background-color: black;
+  width: 10vw;
+  height: 5vh;
+}
+
 .menu-menu {
 
 }
@@ -74,6 +80,36 @@
   position: fixed;
   top: 588px;
   justify-content: space-around;
+}
+
+.bday-date {
+  position: absolute;
+  top: 56.5%;
+  left: 50%;
+  width: 60vw;
+  height: 6.2vh;
+  border: 1px solid;
+  transform: translate(-50%, -50%);
+}
+
+.bday-location {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  width: 36vw;
+  height: 4.2vh;
+  border: 1px solid;
+  transform: translate(-50%, -50%);
+}
+
+.bday-confirmation {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  width: 36vw;
+  height: 2.75vh;
+  border: 1px solid;
+  transform: translate(-50%, -50%);
 }
 
 .div-link {
