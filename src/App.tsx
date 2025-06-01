@@ -1,53 +1,99 @@
-import React, { useEffect, useState } from 'react';
 import logo from './logo-yami-cumple.png';
-import birthday_menu from './birthday_menu_v3.png';
-import back_arrow from './back_arrow.png';
-import location from './luz_location.png';
-import date from './luz_date.png';
-import menu from './luz_menu.png';
 import './App.css';
 import { Buffer } from 'buffer';
+import ImageMapper from 'react-img-mapper';
+import {MapArea} from 'react-img-mapper/dist/types'
 
-const mainEmoji = encodeURIComponent('🍍')
-const mainPhoneNumber = "NjI3MTk4ODg5"
-const mainMessage = "Q29uZmlybW8gbGEgYXNpc3RlbmNpYSYjMTI3ODIxOw==" // Confirmo la asistencia&#127821;
+const mainEventLocation = "TGEgTWFmaWEgc2Ugc2llbnRhIGEgbGEgbWVzYSwgQ2FycmVyIEZpZ3Vlcm9sYSwgMjQsIDE3MDAxIEdpcm9uYQ=="
+const mainMapURL = 'aHR0cHM6Ly9tYXBzLmFwcC5nb28uZ2wvY3ZvdFdvNkFMaGVDY25URjg='
+const mainPhoneNumber = "NjYzNDA2Nzgx"
+const mainMessage = "Q29uZmlybW8gbGEgYXNpc3RlbmNpYQ=="
 
 const App = () => {
 
-  const onLocationClick = () => {
-    window.open('https://maps.app.goo.gl/do54pdBSCzMvUmSA7')
+  const onDateClicked = () => {
+    const eventName = 'Graduación y Cumpleaños de Yami'
+    const eventDates = '20250626T213000/20250627T000000'
+    const eventDetails = ''
+    const eventLocation = Buffer.from(mainEventLocation, 'base64').toString('ascii')
+    
+    window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${eventName}&dates=${eventDates}&details=${eventDetails}&location=${eventLocation}`)
+  }
+  
+  const onLocationClicked = () => {
+    const mapUrl = Buffer.from(mainMapURL, 'base64').toString('ascii')
+    
+    window.open(mapUrl)
   }
 
-  const onDateClick = () => {
-    // window.open('https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmxmMGRiNjkzZDgyMmk1NHViZ2kxcjFnOHEgbHVpc2FuZ2VsMTAwMThAbQ&tmsrc=luisangel10018%40gmail.com')
-    window.open('https://calendar.google.com/calendar/u/0/r/eventedit?dates=20241019/20241020&text=Fiesta cumple Luz')
+  const onConfirmationCliked = () => {
+    const decodedPhoneNumber = Buffer.from(mainPhoneNumber, 'base64').toString('ascii')
+    const decodedMessage = Buffer.from(mainMessage, 'base64').toString('ascii')
+
+    window.open(`https://api.whatsapp.com/send/?phone=${decodedPhoneNumber}&text=${decodedMessage}`)
   }
 
   const render = () => {
-    return renderFrontPage()
+    const areas: MapArea[] = [
+      {
+        id: "date",
+        shape: "poly",
+        coords: [
+          75,365, 310,365, 310,305, 75,305 
+        ],
+        lineWidth: -1
+      },
+      {
+        id: "location",
+        shape: "poly",
+        fillColor: "#eab54d4d",
+        coords: [
+          114,407, 250,407, 250,370, 114,370
+        ],
+        lineWidth: 0
+      },
+      {
+        id: "confirmation",
+        shape: "poly",
+        fillColor: "#eab54d4d",
+        coords: [
+          147,433, 241,433, 241,413, 147,413
+        ],
+        lineWidth: 0
+      }
+    ]
+
+    return <>
+        <div className='test'>
+          <ImageMapper
+            src={logo}
+            name='logo'
+            // responsive={true}
+            // natural={true}
+            width={384}
+            height={541}
+            areas={areas}
+            ref={null}
+            onClick={(area) => onClickArea(area)}
+          />
+        </div>
+    </>
   }
 
-  const renderFrontPage = () => {
-    const decodedPhoneNumber = Buffer.from(mainPhoneNumber, 'base64').toString('ascii')
-    const decodedMessage = Buffer.from(mainMessage, 'base64').toString('ascii') + mainEmoji
-    
-    return <>
-      <img src={logo} className="App-logo" alt="logo" />
+  const onClickArea = (area: MapArea) => {
+    const { id } = area
 
-      <div className='bday-date'></div>
-      <div className='bday-location'></div>
-      <div className='bday-confirmation'></div>
-
-      {/* <div className='app-menu'> */}
-        {/* <div className='test-ground'></div> */}
-        {/* <img src={location} className='menu-option menu-location' alt="logo" onClick={onLocationClick} />
-        <img src={date} className='menu-option menu-date' alt="logo" onClick={onDateClick} />
-        <img src={menu} className='menu-option menu-menu' alt="logo" onClick={onFoodMenuClick} /> */}
-      {/* </div> */}
-      {/* <a href="https://wa.me/664806624?text=Confirmo%20la%20asistencia&#127821;">Click me</a> */}
-      <a href={`https://api.whatsapp.com/send/?phone=${decodedPhoneNumber}&text=${decodedMessage}`}>Click me x2</a>
-      {/* <a href="https://api.whatsapp.com/send/?phone=664806624&text=Confirmo%20la%20asistencia&#127821;">Click me x2</a> */}
-    </>
+    switch (id) {
+      case 'date':
+        onDateClicked();
+        break;
+      case 'location':
+        onLocationClicked();
+        break;
+      case 'confirmation':
+        onConfirmationCliked();
+        break;
+    }
   }
 
   return (

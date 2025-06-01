@@ -1,5 +1,23 @@
+.App-body > div > div#img-mapper {
+  /* position: initial !important; */
+  /* width: 100vw !important; */
+  /* height: initial !important; */
+}
+
+* {
+  margin: 0;
+}
 .App {
   text-align: center;
+}
+
+.test {
+/* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-menu {
@@ -10,39 +28,9 @@
   /* margin-top: 3vh; */
 }
 
-.menu-option {
-  width: 24vw;
-}
-
-.menu-location {
-  width: 30vw;
-}
-
-.menu-date {
-  width: 32vw;
-}
-
-.test-ground {
-  background-color: black;
-  width: 10vw;
-  height: 5vh;
-}
-
-.menu-menu {
-
-}
-
 .App-logo {
   width: 100vw;
-}
-
-.menu-image {
-  width: 100vw;
-}
-
-.back-arrow {
-  width: 8vw;
-  margin-top: -6vh;
+  display: flex;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -51,14 +39,9 @@
   }
 } */
 
-/*
-  f0a8bc
-  ffc0cb
-*/
-
 .App-body {
   background-color: #ffffff;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,50 +49,75 @@
   /* font-size: calc(10px + 2vmin); */
   color: #E42324;
   font-weight: bold;
+  position: relative;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.App-div {
-  background-color: beige;
+.menu-test {
+  position: absolute;
   display: flex;
-  width: 65vw;
-  height: 4vh;
-  position: fixed;
-  top: 588px;
-  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* background-color: green; */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-a {
+    width: 63vw;
+    height: 5.5vh;
+    /* background-color: red; */
+    border: 1px cyan solid;
+    margin-top: 15vh;
+}
+
+.bday-element {
+  display: flex;
+  position: absolute;
+  transform: translate(-50vw, 0vh);
+  -webkit-transform: translate(-50vw, 0vh);
+  /* transform: translateX(-31vw) translateY(-10vh); */
 }
 
 .bday-date {
-  position: absolute;
-  top: 56.5%;
-  left: 50%;
-  width: 60vw;
+  top: 55vh;
+  left: 69vw;
+  width: 62vw;
   height: 6.2vh;
-  border: 1px solid;
-  transform: translate(-50%, -50%);
+  border: 1px solid; 
 }
+
+/*   top: 63%;
+  left: 50%; */
 
 .bday-location {
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  width: 36vw;
+  top: 63.5vh;
+  left: 81vw;
+  width: 31.5vw;
   height: 4.2vh;
   border: 1px solid;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
+  /* top: 67%;
+  left: 50%; */
+
 .bday-confirmation {
-  position: absolute;
-  top: 67%;
-  left: 50%;
+  top: 68.7vh;
+  left: 81vw;
   width: 36vw;
   height: 2.75vh;
   border: 1px solid;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 .div-link {
@@ -127,3 +135,4 @@
     transform: rotate(360deg);
   }
 } */
+
